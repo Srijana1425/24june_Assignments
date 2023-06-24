@@ -44,50 +44,12 @@
 > - `lists[i]` is sorted in **ascending order**.
 > - The sum of `lists[i].length` will not exceed `10000`.
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
 
-```javascript
-class ListNode {
-  constructor(val = 0, next = null) {
-    this.val = val;
-    this.next = next;
-  }
-}
+*********************************************************************************************************************************************
 
-function mergeKLists(lists) {
-  if (lists.length === 0) return null;
-  return mergeLists(lists, 0, lists.length - 1);
-}
 
-function mergeLists(lists, start, end) {
-  if (start === end) return lists[start];
-  const mid = Math.floor((start + end) / 2);
-  const left = mergeLists(lists, start, mid);
-  const right = mergeLists(lists, mid + 1, end);
-  return mergeTwoLists(left, right);
-}
-
-function mergeTwoLists(l1, l2) {
-  const dummy = new ListNode();
-  let current = dummy;
-
-  while (l1 && l2) {
-    if (l1.val <= l2.val) {
-      current.next = l1;
-      l1 = l1.next;
-    } else {
-      current.next = l2;
-      l2 = l2.next;
-    }
-    current = current.next;
-  }
-
-  if (l1) current.next = l1;
-  if (l2) current.next = l2;
-
-  return dummy.next;
-}
-```
 
 ## 💡 Question 02- Count of Smaller Numbers After Self
 
@@ -124,39 +86,11 @@ function mergeTwoLists(l1, l2) {
 > - `1 <= nums.length <= 100000`
 > - `-10000 <= nums[i] <= 10000`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
 
-```javascript
-function countSmaller(nums) {
-  const result = new Array(nums.length).fill(0);
-  const sortedNums = [];
+*********************************************************************************************************************************************
 
-  for (let i = nums.length - 1; i >= 0; i--) {
-    const index = binarySearch(sortedNums, nums[i]);
-    result[i] = index;
-    sortedNums.splice(index, 0, nums[i]);
-  }
-
-  return result;
-}
-
-function binarySearch(nums, target) {
-  let left = 0;
-  let right = nums.length;
-
-  while (left < right) {
-    const mid = Math.floor((left + right) / 2);
-
-    if (nums[mid] < target) {
-      left = mid + 1;
-    } else {
-      right = mid;
-    }
-  }
-
-  return left;
-}
-```
 
 ## 💡 Question 03- Sort an Array
 
@@ -187,37 +121,11 @@ Explanation: Note that the values of nums are not necessairly unique.
 - `1 <= nums.length <= 5 * 10000`
 - `-5 * 104 <= nums[i] <= 5 * 10000`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
 
-```javascript
-function sortArray(nums) {
-  quickSort(nums, 0, nums.length - 1);
-  return nums;
-}
+*********************************************************************************************************************************************
 
-function quickSort(nums, low, high) {
-  if (low < high) {
-    const pivotIndex = partition(nums, low, high);
-    quickSort(nums, low, pivotIndex - 1);
-    quickSort(nums, pivotIndex + 1, high);
-  }
-}
-
-function partition(nums, low, high) {
-  const pivot = nums[high];
-  let i = low - 1;
-
-  for (let j = low; j < high; j++) {
-    if (nums[j] < pivot) {
-      i++;
-      [nums[i], nums[j]] = [nums[j], nums[i]];
-    }
-  }
-
-  [nums[i + 1], nums[high]] = [nums[high], nums[i + 1]];
-  return i + 1;
-}
-```
 
 ## 💡 Question 04- Move all zeroes to end of array
 
@@ -233,26 +141,11 @@ Input : arr[]  = {1, 2, 0, 0, 0, 3, 6};
 Output : arr[] = {1, 2, 3, 6, 0, 0, 0};
 ```
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
 
-```javascript
-function moveZeroes(nums) {
-  let nonZeroIndex = 0;
+*********************************************************************************************************************************************
 
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] !== 0) {
-      nums[nonZeroIndex] = nums[i];
-      nonZeroIndex++;
-    }
-  }
-
-  for (let i = nonZeroIndex; i < nums.length; i++) {
-    nums[i] = 0;
-  }
-
-  return nums;
-}
-```
 
 ## 💡 Question 05- Rearrange array in alternating positive & negative items with O(1) extra space
 
@@ -266,31 +159,12 @@ function moveZeroes(nums) {
 > > Input:  arr[] = {-5, -2, 5, 2, 4, 7, 1, 8, 0, -8}
 > > Output: arr[] = {-5, 5, -2, 2, -8, 4, 7, 1, 8, 0}
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
 
-```javascript
-function rearrangeArray(nums) {
-  let positiveIndex = 0;
+*********************************************************************************************************************************************
 
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] < 0) {
-      [nums[i], nums[positiveIndex]] = [nums[positiveIndex], nums[i]];
-      positiveIndex++;
-    }
-  }
 
-  let positive = positiveIndex;
-  let negative = 0;
-
-  while (positive < nums.length && negative < positive && nums[negative] < 0) {
-    [nums[negative], nums[positive]] = [nums[positive], nums[negative]];
-    positive++;
-    negative += 2;
-  }
-
-  return nums;
-}
-```
 
 ## 💡 Question 06- Merge two sorted arrays
 
@@ -304,37 +178,12 @@ function rearrangeArray(nums) {
 > > Input: arr1[] = { 5, 8, 9}, arr2[] = {4, 7, 8}
 > > Output: arr3[] = {4, 5, 7, 8, 8, 9}
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
 
-```javascript
-function mergeSortedArrays(arr1, arr2) {
-  const merged = [];
-  let i = 0;
-  let j = 0;
+*********************************************************************************************************************************************
 
-  while (i < arr1.length && j < arr2.length) {
-    if (arr1[i] <= arr2[j]) {
-      merged.push(arr1[i]);
-      i++;
-    } else {
-      merged.push(arr2[j]);
-      j++;
-    }
-  }
 
-  while (i < arr1.length) {
-    merged.push(arr1[i]);
-    i++;
-  }
-
-  while (j < arr2.length) {
-    merged.push(arr2[j]);
-    j++;
-  }
-
-  return merged;
-}
-```
 
 ## 💡 Question 07- Intersection of Two Arrays
 
@@ -360,23 +209,12 @@ function mergeSortedArrays(arr1, arr2) {
 > - `1 <= nums1.length, nums2.length <= 1000`
 > - `0 <= nums1[i], nums2[i] <= 1000`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
 
-```javascript
-function intersection(nums1, nums2) {
-  const set1 = new Set(nums1);
-  const set2 = new Set(nums2);
-  const result = [];
+*********************************************************************************************************************************************
 
-  for (const num of set1) {
-    if (set2.has(num)) {
-      result.push(num);
-    }
-  }
 
-  return result;
-}
-```
 
 ## 💡 Question 08- Intersection of Two Arrays II
 
@@ -402,28 +240,5 @@ function intersection(nums1, nums2) {
 > - `1 <= nums1.length, nums2.length <= 1000`
 > - `0 <= nums1[i], nums2[i] <= 1000`
 
-### 🚀 Answer
-
-```javascript
-function intersect(nums1, nums2) {
-  const map = new Map();
-  const result = [];
-
-  for (const num of nums1) {
-    if (map.has(num)) {
-      map.set(num, map.get(num) + 1);
-    } else {
-      map.set(num, 1);
-    }
-  }
-
-  for (const num of nums2) {
-    if (map.has(num) && map.get(num) > 0) {
-      result.push(num);
-      map.set(num, map.get(num) - 1);
-    }
-  }
-
-  return result;
-}
-```
+*Answer*<br>
+**Code** [Link]()

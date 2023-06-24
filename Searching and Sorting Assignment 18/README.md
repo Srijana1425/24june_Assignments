@@ -28,31 +28,11 @@
 > - `intervals[i].length == 2`
 > - `0 <= starti <= endi <= 10000`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
+*********************************************************************************************************************************************
 
-```javascript
-function merge(intervals) {
-  intervals.sort((a, b) => a[0] - b[0]);
 
-  const mergedIntervals = [];
-  let currentInterval = intervals[0];
-
-  for (let i = 1; i < intervals.length; i++) {
-    const [start, end] = intervals[i];
-
-    if (start <= currentInterval[1]) {
-      currentInterval[1] = Math.max(currentInterval[1], end);
-    } else {
-      mergedIntervals.push(currentInterval);
-      currentInterval = intervals[i];
-    }
-  }
-
-  mergedIntervals.push(currentInterval);
-
-  return mergedIntervals;
-}
-```
 
 ## 💡 Question 02- Sort Colors
 
@@ -84,28 +64,10 @@ function merge(intervals) {
 > - `1 <= n <= 300`
 > - `nums[i]` is either `0`, `1`, or `2`.
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
+*********************************************************************************************************************************************
 
-```javascript
-function sortColors(nums) {
-  let low = 0;
-  let mid = 0;
-  let high = nums.length - 1;
-
-  while (mid <= high) {
-    if (nums[mid] === 0) {
-      [nums[low], nums[mid]] = [nums[mid], nums[low]];
-      low++;
-      mid++;
-    } else if (nums[mid] === 1) {
-      mid++;
-    } else if (nums[mid] === 2) {
-      [nums[mid], nums[high]] = [nums[high], nums[mid]];
-      high--;
-    }
-  }
-}
-```
 
 ## 💡 Question 03- First Bad Version Solution
 
@@ -140,31 +102,10 @@ function sortColors(nums) {
 >
 > - `1 <= bad <= n <= 2^31 - 1`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
+*********************************************************************************************************************************************
 
-```javascript
-function isBadVersion(version) {
-  // Assume this function is provided by the system
-  // and returns whether the version is bad or not.
-}
-
-function firstBadVersion(n) {
-  let left = 1;
-  let right = n;
-
-  while (left < right) {
-    const mid = Math.floor(left + (right - left) / 2);
-
-    if (isBadVersion(mid)) {
-      right = mid;
-    } else {
-      left = mid + 1;
-    }
-  }
-
-  return left;
-}
-```
 
 ## 💡 Question 04- Maximum Gap
 
@@ -195,25 +136,11 @@ function firstBadVersion(n) {
 > - `1 <= nums.length <= 10^5`
 > - `0 <= nums[i] <= 10^9`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
+*********************************************************************************************************************************************
 
-```javascript
-function maximumGap(nums) {
-  if (nums.length < 2) {
-    return 0;
-  }
 
-  nums.sort((a, b) => a - b);
-
-  let maxGap = 0;
-  for (let i = 1; i < nums.length; i++) {
-    const gap = nums[i] - nums[i - 1];
-    maxGap = Math.max(maxGap, gap);
-  }
-
-  return maxGap;
-}
-```
 
 ## 💡 Question 05- Contains Duplicate
 
@@ -248,23 +175,11 @@ function maximumGap(nums) {
 > - `1 <= nums.length <= 10^5`
 > - `109 <= nums[i] <= 10^9`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
+*********************************************************************************************************************************************
 
-```javascript
-function containsDuplicate(nums) {
-  const numSet = new Set();
 
-  for (const num of nums) {
-    if (numSet.has(num)) {
-      return true;
-    }
-
-    numSet.add(num);
-  }
-
-  return false;
-}
-```
 
 ## 💡 Question 06- Minimum Number of Arrows to Burst Balloons
 
@@ -309,25 +224,11 @@ function containsDuplicate(nums) {
 > - `points[i].length == 2`
 > - `231 <= xstart < xend <= 2^31 - 1`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
+*********************************************************************************************************************************************
 
-```javascript
-function findMinArrowShots(points) {
-  points.sort((a, b) => a[1] - b[1]);
 
-  let arrows = 0;
-  let prevEnd = -Infinity;
-
-  for (const [start, end] of points) {
-    if (start > prevEnd) {
-      arrows++;
-      prevEnd = end;
-    }
-  }
-
-  return arrows;
-}
-```
 
 ## 💡 Question 07- Longest Increasing Subsequence
 
@@ -360,23 +261,11 @@ function findMinArrowShots(points) {
 > - `1 <= nums.length <= 2500`
 > - `-10^4 <= nums[i] <= 10^4`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
+*********************************************************************************************************************************************
 
-```javascript
-function lengthOfLIS(nums) {
-  const dp = new Array(nums.length).fill(1);
 
-  for (let i = 1; i < nums.length; i++) {
-    for (let j = 0; j < i; j++) {
-      if (nums[i] > nums[j]) {
-        dp[i] = Math.max(dp[i], dp[j] + 1);
-      }
-    }
-  }
-
-  return Math.max(...dp);
-}
-```
 
 ## 💡 Question 08- 132 Pattern
 
@@ -414,25 +303,8 @@ function lengthOfLIS(nums) {
 > - `1 <= n <= 2 * 10^5`
 > - `-10^9 <= nums[i] <= 10^9`
 
-### 🚀 Answer
+*Answer*<br>
+**Code** [Link]()
+*********************************************************************************************************************************************
 
-```javascript
-function find132pattern(nums) {
-  const stack = [];
-  let s3 = -Infinity;
 
-  for (let i = nums.length - 1; i >= 0; i--) {
-    if (nums[i] < s3) {
-      return true;
-    }
-
-    while (stack.length > 0 && nums[i] > stack[stack.length - 1]) {
-      s3 = stack.pop();
-    }
-
-    stack.push(nums[i]);
-  }
-
-  return false;
-}
-```

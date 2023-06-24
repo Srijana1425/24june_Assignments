@@ -45,7 +45,7 @@
 > - The sum of `lists[i].length` will not exceed `10000`.
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2019/ans1.js)
 
 *********************************************************************************************************************************************
 
@@ -87,7 +87,7 @@
 > - `-10000 <= nums[i] <= 10000`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2019/ans2.js)
 
 *********************************************************************************************************************************************
 
@@ -122,7 +122,7 @@ Explanation: Note that the values of nums are not necessairly unique.
 - `-5 * 104 <= nums[i] <= 5 * 10000`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2019/ans3.js)
 
 *********************************************************************************************************************************************
 
@@ -142,7 +142,7 @@ Output : arr[] = {1, 2, 3, 6, 0, 0, 0};
 ```
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2019/ans4.js)
 
 *********************************************************************************************************************************************
 
@@ -160,7 +160,7 @@ Output : arr[] = {1, 2, 3, 6, 0, 0, 0};
 > > Output: arr[] = {-5, 5, -2, 2, -8, 4, 7, 1, 8, 0}
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2019/ans5.js)
 
 *********************************************************************************************************************************************
 
@@ -179,7 +179,7 @@ Output : arr[] = {1, 2, 3, 6, 0, 0, 0};
 > > Output: arr3[] = {4, 5, 7, 8, 8, 9}
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2019/ans6.js)
 
 *********************************************************************************************************************************************
 
@@ -210,7 +210,7 @@ Output : arr[] = {1, 2, 3, 6, 0, 0, 0};
 > - `0 <= nums1[i], nums2[i] <= 1000`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2019/ans7.js)
 
 *********************************************************************************************************************************************
 
@@ -241,4 +241,4 @@ Output : arr[] = {1, 2, 3, 6, 0, 0, 0};
 > - `0 <= nums1[i], nums2[i] <= 1000`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2019/ans8.js)

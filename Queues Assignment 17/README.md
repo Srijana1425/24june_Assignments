@@ -26,7 +26,7 @@
 > ```
 
 *Answer*<br>
-**Code** [Link]()<br>
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Queues%20Assignment%2017/ans1.js)
 
 **************************************************************************************************
 
@@ -66,7 +66,7 @@
 > ```
 
 *Answer*<br>
-**Code** [Link]()<br>
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Queues%20Assignment%2017/ans2.js)
 
 **************************************************************************************************
 
@@ -108,7 +108,7 @@
 > ```
 
 *Answer*<br>
-**Code** [Link]()<br>
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Queues%20Assignment%2017/ans3.js)
 
 **************************************************************************************************
 
@@ -141,7 +141,7 @@
 > ```
 
 *Answer*<br>
-**Code** [Link]()<br>
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Queues%20Assignment%2017/ans4.js)
 
 **************************************************************************************************
 
@@ -188,7 +188,7 @@
 > ```
 
 *Answer*<br>
-**Code** [Link]()<br>
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Queues%20Assignment%2017/ans5.js)
 
 **************************************************************************************************
 
@@ -235,7 +235,7 @@
 > ```
 
 *Answer*<br>
-**Code** [Link]()<br>
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Queues%20Assignment%2017/ans6.js)
 
 **************************************************************************************************
 
@@ -282,7 +282,7 @@
 > ```
 
 *Answer*<br>
-**Code** [Link]()<br>
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Queues%20Assignment%2017/ans7.js)
 
 **************************************************************************************************
 
@@ -315,5 +315,5 @@
 > ```
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Queues%20Assignment%2017/ans8.js)
 

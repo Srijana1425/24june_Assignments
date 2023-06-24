@@ -29,7 +29,7 @@
 > - `0 <= starti <= endi <= 10000`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2018/ans1.js)
 *********************************************************************************************************************************************
 
 
@@ -65,7 +65,7 @@
 > - `nums[i]` is either `0`, `1`, or `2`.
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2018/ans2.js)
 *********************************************************************************************************************************************
 
 
@@ -103,7 +103,7 @@
 > - `1 <= bad <= n <= 2^31 - 1`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2018/ans3.js)
 *********************************************************************************************************************************************
 
 
@@ -137,7 +137,7 @@
 > - `0 <= nums[i] <= 10^9`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2018/ans4.js)
 *********************************************************************************************************************************************
 
 
@@ -176,7 +176,7 @@
 > - `109 <= nums[i] <= 10^9`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2018/ans5.js)
 *********************************************************************************************************************************************
 
 
@@ -225,7 +225,7 @@
 > - `231 <= xstart < xend <= 2^31 - 1`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2018/ans6.js)
 *********************************************************************************************************************************************
 
 
@@ -262,7 +262,7 @@
 > - `-10^4 <= nums[i] <= 10^4`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2018/ans7.js)
 *********************************************************************************************************************************************
 
 
@@ -304,5 +304,5 @@
 > - `-10^9 <= nums[i] <= 10^9`
 
 *Answer*<br>
-**Code** [Link]()
+**Code** [Link](https://github.com/Srijana1425/24june_Assignments/blob/main/Searching%20and%20Sorting%20Assignment%2018/ans8.js)
 
